@@ -26,13 +26,13 @@
       padding: 0 2rem;
     }
 
+    /* HEADER */
     .ac-header {
       text-align: center;
       padding: 3rem 1rem 2.5rem;
       border-bottom: 1px solid #ddd;
       margin-bottom: 1.5rem;
     }
-
     .ac-parish {
       font-size: 24px;
       letter-spacing: 0.12em;
@@ -40,7 +40,6 @@
       color: #888;
       margin-bottom: 14px;
     }
-
     .ac-title {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 72px;
@@ -49,44 +48,42 @@
       line-height: 1.2;
       margin-bottom: 12px;
     }
-
     .ac-subtitle {
       font-size: 38px;
       color: #555;
       font-style: italic;
       margin-bottom: 14px;
     }
-
     .ac-verse {
       font-size: 28px;
       color: #999;
       font-style: italic;
     }
 
+    /* ACCORDION */
     .ac-list {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 16px;
     }
-
     .ac-item {
-      border-radius: 12px;
-      border: 1.5px solid #d0cdc8;
+      border-radius: 14px;
+      border: 2px solid #d0cdc8;
       overflow: hidden;
       background: #fff;
     }
-
     .ac-item.open {
       border-color: #a0a0a0;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
     }
 
+    /* TRIGGER */
     .ac-trigger {
       width: 100%;
       display: flex;
       align-items: center;
-      gap: 18px;
-      padding: 20px 24px;
+      gap: 24px;
+      padding: 28px 32px;
       background: none;
       border: none;
       cursor: pointer;
@@ -94,7 +91,6 @@
       font-family: inherit;
       transition: background 0.15s;
     }
-
     .ac-trigger:hover { background: #f5f4f1; }
 
     .ac-icon-wrap {
@@ -107,7 +103,6 @@
       flex-shrink: 0;
       font-size: 48px;
     }
-
     .era1 .ac-icon-wrap { background: #D3D1C7; color: #444441; }
     .era2 .ac-icon-wrap { background: #B5D4F4; color: #0C447C; }
     .era3 .ac-icon-wrap { background: #9FE1CB; color: #085041; }
@@ -122,7 +117,6 @@
       font-weight: 600;
       margin-bottom: 6px;
     }
-
     .era1 .ac-trigger-badge { color: #5F5E5A; }
     .era2 .ac-trigger-badge { color: #185FA5; }
     .era3 .ac-trigger-badge { color: #0F6E56; }
@@ -130,126 +124,115 @@
 
     .ac-trigger-title {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 22px;
+      font-size: 44px;
       font-weight: 700;
       color: #111;
       line-height: 1.2;
-      margin-bottom: 3px;
+      margin-bottom: 6px;
     }
-
     .ac-trigger-period {
-      font-size: 15px;
+      font-size: 30px;
       color: #777;
     }
-
     .ac-chevron {
-      font-size: 22px;
+      font-size: 44px;
       color: #aaa;
       transition: transform 0.3s ease;
       flex-shrink: 0;
     }
-
     .ac-item.open .ac-chevron { transform: rotate(180deg); }
 
+    /* BODY */
     .ac-body {
       display: none;
-      padding: 0 24px 24px;
+      padding: 0 32px 32px;
       border-top: 1px solid #e8e5e0;
     }
-
     .ac-item.open .ac-body { display: block; }
 
     .ac-points {
       list-style: none;
-      margin-top: 16px;
+      margin-top: 20px;
     }
-
     .ac-points li {
       display: flex;
-      gap: 14px;
+      gap: 20px;
       align-items: flex-start;
-      padding: 12px 0;
+      padding: 18px 0;
       border-bottom: 1px solid #eeebe6;
-      font-size: 17px;
+      font-size: 34px;
       color: #444;
       line-height: 1.65;
     }
-
     .ac-points li:last-child { border-bottom: none; }
-
     .ac-points li i {
-      font-size: 22px;
+      font-size: 44px;
       flex-shrink: 0;
-      margin-top: 2px;
+      margin-top: 4px;
     }
-
     .era1 .ac-points li i { color: #888780; }
     .era2 .ac-points li i { color: #185FA5; }
     .era3 .ac-points li i { color: #0F6E56; }
     .era4 .ac-points li i { color: #993C1D; }
 
+    /* CALLOUT */
     .ac-callout {
-      margin-top: 16px;
-      padding: 14px 18px;
-      border-radius: 8px;
+      margin-top: 20px;
+      padding: 22px 28px;
+      border-radius: 10px;
       display: flex;
-      gap: 12px;
+      gap: 16px;
       align-items: flex-start;
-      font-size: 16px;
+      font-size: 32px;
       line-height: 1.65;
     }
-
-    .ac-callout.warning { background: #FEF3DC; color: #633806; border: 1px solid #f0d090; }
-    .ac-callout.success { background: #EAF3DE; color: #27500A; border: 1px solid #b8dea0; }
+    .ac-callout.warning   { background: #FEF3DC; color: #633806; border: 1px solid #f0d090; }
+    .ac-callout.success   { background: #EAF3DE; color: #27500A; border: 1px solid #b8dea0; }
     .ac-callout.highlight { background: #FAECE7; color: #712B13; border: 1px solid #f0b8a0; }
-
-    .ac-callout i { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
-    .ac-callout.warning i { color: #BA7517; }
-    .ac-callout.success i { color: #3B6D11; }
+    .ac-callout i { font-size: 44px; flex-shrink: 0; margin-top: 2px; }
+    .ac-callout.warning i   { color: #BA7517; }
+    .ac-callout.success i   { color: #3B6D11; }
     .ac-callout.highlight i { color: #993C1D; }
 
+    /* QUOTE */
     .ac-quote {
-      margin-top: 16px;
-      padding: 16px 20px;
-      border-left: 4px solid #185FA5;
+      margin-top: 20px;
+      padding: 24px 32px;
+      border-left: 5px solid #185FA5;
       background: #f2f6fc;
-      border-radius: 0 8px 8px 0;
+      border-radius: 0 10px 10px 0;
     }
-
     .ac-quote p {
-      font-size: 17px;
+      font-size: 34px;
       font-style: italic;
       color: #444;
       line-height: 1.7;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
+    .ac-quote .attr   { font-size: 28px; color: #888; }
+    .ac-quote .thanks { font-size: 28px; color: #777; font-style: italic; margin-top: 10px; }
 
-    .ac-quote .attr { font-size: 14px; color: #888; }
-    .ac-quote .thanks { font-size: 15px; color: #777; font-style: italic; margin-top: 8px; }
-
+    /* CLOSING */
     .ac-closing {
       margin-top: 1.5rem;
-      padding: 24px 28px;
+      padding: 40px 48px;
       background: #fff;
-      border-radius: 12px;
-      border: 1.5px solid #d0cdc8;
+      border-radius: 14px;
+      border: 2px solid #d0cdc8;
       text-align: center;
     }
-
     .ac-closing i.heart-icon {
-      font-size: 32px;
+      font-size: 64px;
       color: #993C1D;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       display: block;
     }
-
     .ac-closing p {
-      font-size: 17px;
+      font-size: 34px;
       color: #555;
       line-height: 1.85;
       font-style: italic;
     }
-
     .ac-closing strong {
       color: #111;
       font-weight: 600;
@@ -259,6 +242,7 @@
 </head>
 <body>
   <div class="ac-root">
+
     <div class="ac-header">
       <p class="ac-parish">Gereja Hati Santa Perawan Maria Tak Bernoda · Paroki Tangerang</p>
       <h1 class="ac-title">Evolusi Pelaporan Kartu Kuning</h1>
@@ -369,11 +353,12 @@
     <div class="ac-closing">
       <i class="ti ti-heart heart-icon"></i>
       <p>
-        Di setiap zaman, perubahan ini selalu lahir dari <strong>kerjasama yang erat</strong> antara bendahara paroki dan bendahara lingkungan.<br>
+        Di setiap zaman, perubahan ini selalu lahir dari <strong>kerjasama yang erat</strong> antara bendahara paroki dan bendahara lingkungan.<br><br>
         Era keempat ini pun tidak berbeda — kami memohon dengan sepenuh hati kerjasama yang sama dari ibu-ibu sekalian.<br><br>
         Semua ini tidak lain dan tidak bukan adalah untuk <strong>kemuliaan Allah</strong> dan menjaga amanah kepercayaan umat yang telah dititipkan kepada kita semua.
       </p>
     </div>
+
   </div>
 
   <script>
